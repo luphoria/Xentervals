@@ -27,4 +27,4 @@ Please.
 
 ## Credits
 - [luphoria](https://luphoria.com)
-Your name could be here, if you dang contributed to the repository ;-)
+- Your name could be here, if you dang contributed to the repository ;-)
