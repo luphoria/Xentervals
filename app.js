@@ -18,7 +18,7 @@ let errorMargin = parseInt(prompt("Enter the margin of error in cents (10): ")) 
 
 let EDOComparison = CompareEDOs(EDOs, errorMargin);
 
-console.log(EDOComparison);
+// console.log(EDOComparison);
 
 let EDOChoices = "";
 
@@ -35,7 +35,7 @@ while (true) {
     if (!EDOComparison[viewEDO]) {
         console.log("Invalid input, please choose from the EDOs listed.");
     } else {
-        console.log(viewEDO);
+        // console.log(viewEDO);
         for (let steps in EDOComparison[viewEDO]) {
             console.log(`${steps}\\${viewEDO} was ${EDOComparison[viewEDO][steps].diff > 0 ? `+${EDOComparison[viewEDO][steps].diff}` : EDOComparison[viewEDO][steps].diff}c away from ${EDOComparison[viewEDO][steps].interval}.`)
         }
