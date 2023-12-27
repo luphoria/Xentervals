@@ -1,5 +1,5 @@
 // CompareEDOs compares any list of supplied EDOs.
-// There can be any number of EDOs supplied in the 
+// There can be any number of EDOs supplied in the
 // input, and it will compare all to each other.
 // Input:
 // {
@@ -30,9 +30,10 @@ export const CompareEDOs = (EDOs, errorMargin) => {
             // loop each scale degree in EDO 2
             if (Math.abs(EDOs[edo1][i] - EDOs[edo2][j]) < errorMargin) {
               // and if they are less than 10c apart
-              res[edo1][(parseInt(i)+1).toString()] = { // add it to the response
-                "interval": `${parseInt(j) + 1}\\${edo2}`,
-                "diff": Math.round((EDOs[edo1][i] - EDOs[edo2][j]) * 1000) / 1000
+              res[edo1][(parseInt(i) + 1).toString()] = {
+                // add it to the response
+                interval: `${parseInt(j) + 1}\\${edo2}`,
+                diff: Math.round((EDOs[edo1][i] - EDOs[edo2][j]) * 1000) / 1000,
               };
               // console.log(
               //   // log it
